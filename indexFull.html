@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+			height: 300px;
+			/* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		h1 {
+			font-size: 24px;
+		}
+	</style>
+
+
+
+	<!-- More info: https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection -->
+	<script src="tf/core/2.4.0/tf-core.js"></script>
+	<script src="tf/core/2.4.0/tf-converter.js"></script>
+	<!--<script src="tf/core/2.4.0/tf-backend-webgl.js"></script>-->
+	<script src="tf/core/2.4.0/tf-backend-wasm.js"></script>
+	<script src="tf/models/face-landmarks@0.0.1/face-landmarks-detection.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+	<script src="indexFull.js"></script>
+
+	<script>
+		main();
+	</script>
+
+</head>
+
+<body style="text-align:center;">
+	<div class="row">
+		<div class="column">
+			<h1>Foto al Pestañar</h1>
+			<canvas id="Photo_People" width="250" height="200">
+		</div>
+		<div class="column">
+			<progress id="Progress_Bar" value="0" max="100" style="width: 200;"> </progress>
+			<h1 id="perf"></h1>
+			<h1 id="EAR_header"></h1>
+			<h1 id="Validation_header"></h1>
+			<h1 id="InsideCircle_header"></h1>
+			<h1 id="BlinkCounter_header"></h1>
+			<h1 id="Log_header"></h1>
+		</div>
+		<div class="column">
+			<h1>Foto Tarjeta</h1>
+			<canvas id="Photo_Card" width="250" height="200">
+		</div>
+	</div>
+	<div class="row"></div>
+		<div id="main">
+			<video autoplay muted playsinline hidden id="video" style="width: auto;height: auto;"></video>
+			<canvas id="facecanvas"></canvas>
+		</div>
+	</div>
+</body>
+
+</html>

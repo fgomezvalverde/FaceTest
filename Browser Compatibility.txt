@@ -1,0 +1,21 @@
+Windows Desktop         Run?	FPS
+Chrome         		OK	60
+Edge			OK	55
+Firefox			OK	46
+
+Huawei Android Nova 5T
+Chrome			OK	20
+Firefow			OK	8
+Android Navegator	OK	10
+
+Iphone 11 
+Safari			OK	26			
+Chrome			OK	25
+
+Tablet IOS
+Chrome			OK	29	
+Safari			OK	27		
+
+
+
+

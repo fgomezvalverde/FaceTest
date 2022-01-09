@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+
+
+
+	<!-- More info: https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+	<script src="indexSmall.js"></script>
+
+	<script>
+		main();
+	</script>
+
+</head>
+
+<body style="text-align:center;">
+
+	
+	<h1 id="Log_header"></h1>
+	<video autoplay muted playsinline hidden id="video" style="width: auto;height: auto;"></video>
+	<canvas id="facecanvas"></canvas>
+	<h1 id="perf"></h1>
+	<h1 id="EAR_header"></h1>
+	<h1 id="Validation_header"></h1>
+	<h1 id="InsideCircle_header"></h1>
+	<h1 id="BlinkCounter_header"></h1>
+</body>
+
+</html>

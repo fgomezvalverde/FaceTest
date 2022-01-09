@@ -1,0 +1,12 @@
+WASM APPTIVIDAD
+https://crediquick.apptividad.net/Apptividad_Demo/CustomModelIdTest/FaceMeshTest/indexSmall.html
+Loading 3.12secs
+FPS 18
+
+WASM
+Loading 3.42secs
+FPS 19
+
+WEBGL
+Loading 4.56
+FPS 30
